@@ -1,0 +1,14 @@
+// 1. Agensi dengan jumlah artis terbanyak
+MATCH (a:Artist)-[:SIGNED_TO]->(ag:Agency)
+RETURN ag.name AS Agency, count(a) AS JumlahArtist
+ORDER BY JumlahArtist DESC;
+
+// 2. Genre paling sering digunakan
+MATCH (a:Artist)-[:HAS_GENRE]->(g:Genre)
+RETURN g.name AS Genre, count(a) AS JumlahArtis
+ORDER BY JumlahArtis DESC;
+
+// 3. Tren debut artis berdasarkan tahun
+MATCH (a:Artist)-[:DEBUTED_IN]->(t:TahunDebut)
+RETURN t.year AS TahunDebut, count(a) AS JumlahDebut
+ORDER BY TahunDebut ASC;
