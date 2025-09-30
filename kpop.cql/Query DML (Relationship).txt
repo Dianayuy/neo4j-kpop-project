@@ -1,0 +1,521 @@
+// === ARTIST ke AGENCY ===
+MATCH (a:Artist {name: "Super Junior"}), (ag:Agency {name: "SM Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "SEVENTEEN"}), (ag:Agency {name: "Pledis Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "Red Velvet"}), (ag:Agency {name: "SM Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "Momoland"}), (ag:Agency {name: "MLD ENt"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "iKON"}), (ag:Agency {name: "YG Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "ITZY"}), (ag:Agency {name: "JYP Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "EXO"}), (ag:Agency {name: "SM Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "Stray Kids"}), (ag:Agency {name: "JYP Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "Le Sserafim"}), (ag:Agency {name: "Source Music"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "DAY6"}), (ag:Agency {name: "JYP Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "Treasure"}), (ag:Agency {name: "YG Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "aespa"}), (ag:Agency {name: "SM Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "SNSD"}), (ag:Agency {name: "SM Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "TXT"}), (ag:Agency {name: "BigHit Music"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name: "IVE"}), (ag:Agency {name: "Starship Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Twice"}), (ag:Agency {name:"JYP Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"ATEEZ"}), (ag:Agency {name:"KQ Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"MAMAMOO"}), (ag:Agency {name:"RBW"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"BIGBANG"}), (ag:Agency {name:"YG Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"NewJeans"}), (ag:Agency {name:"ADOR Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"GOT7"}), (ag:Agency {name:"JYP Ent (ex)"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"IU"}), (ag:Agency {name:"Kakao Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Gummy"}), (ag:Agency {name:"C-JeS Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Taeyeon"}), (ag:Agency {name:"SM Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Jessi"}), (ag:Agency {name:"Doremi Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Lee Hi"}), (ag:Agency {name:"AOMG Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Sunmi"}), (ag:Agency {name:"Abyss Company"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Ailee"}), (ag:Agency {name:"YMC Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"BIBI"}), (ag:Agency {name:"Feel Ghood Music"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+MATCH (a:Artist {name:"Chungha"}), (ag:Agency {name:"MNH Ent"})
+CREATE (a)-[:SIGNED_TO]->(ag);
+
+
+
+//=== ALBUM ke SONG ===
+
+MATCH (al:Album {title:"Sorry, Sorry"}), (s:Song {title:"Sorry, Sorry"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"FML"}), (s:Song {title:"Super"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"The Red"}), (s:Song {title:"Red Flavor"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Great"}), (s:Song {title:"BBoom BBoom"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Return"}), (s:Song {title:"Love Scenario"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Crazy in Love"}), (s:Song {title:"DALLA DALLA"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Don’t Mess Up My Tempo"}), (s:Song {title:"Love Shot"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Go Live"}), (s:Song {title:"God's Menu"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Antifragile"}), (s:Song {title:"Fearless"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"The Day"}), (s:Song {title:"Congratulations"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"The Second Step: Chapter One"}), (s:Song {title:"DARARI"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Girls"}), (s:Song {title:"Next Level"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Gee"}), (s:Song {title:"Gee"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"The Chaos Chapter: FREEZE"}), (s:Song {title:"Anti-Romantic"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"I’ve IVE"}), (s:Song {title:"ELEVEN"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Twicecoaster: Lane 1"}), (s:Song {title:"TT"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Zero: Fever Part 3"}), (s:Song {title:"Deja Vu"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Reality in BLACK"}), (s:Song {title:"HIP"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Made"}), (s:Song {title:"Bang Bang Bang"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Get UP"}), (s:Song {title:"Super Shy"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Eyes On You"}), (s:Song {title:"Just Right"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Lilac"}), (s:Song {title:"Celebrity"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Descendants of the Sun OST Part.4"}), (s:Song {title:"You Are My Everything"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"My Voice"}), (s:Song {title:"I"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"NUNU NANA"}), (s:Song {title:"NUNU NANA"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Album 4 ONLY"}), (s:Song {title:"ONLY"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Warning"}), (s:Song {title:"Gashina"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Invitation"}), (s:Song {title:"Heaven"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Lowlife Princess: Noir"}), (s:Song {title:"Vengeance"})
+CREATE (al)-[:CONTAINS]->(s);
+
+MATCH (al:Album {title:"Querencia"}), (s:Song {title:"Gotta Go"})
+CREATE (al)-[:CONTAINS]->(s);
+
+
+
+//artis ke debut year
+WITH [
+  ["Super Junior",2005],
+  ["Seventeen",2015],
+  ["Red Velvet",2014],
+  ["Momoland",2016],
+  ["iKon",2015],
+  ["ITZY",2019],
+  ["EXO",2012],
+  ["Stray Kids",2018],
+  ["LE SSERAFIM",2022],
+  ["DAY-6",2015],
+  ["Treasure",2020],
+  ["aespa",2020],
+  ["SNSD",2007],
+  ["Tomorrow X Together",2019],
+  ["IVE",2021],
+  ["Twice",2015],
+  ["ATEEZ",2018],
+  ["MAMAMOO",2014],
+  ["BIGBANG",2006],
+  ["NewJeans",2022],
+  ["GOT7",2014],
+  ["IU",2008],
+  ["Gummy",2003],
+  ["Taeyeon (SNSD)",2015],
+  ["Jessi",2005],
+  ["Lee Hi",2012],
+  ["Sunmi",2013],
+  ["Ailee",2012],
+  ["BIBI",2019],
+  ["Chungha",2019]
+] AS data
+FOREACH (row IN data |
+  MERGE (a:Artist {name: row[0]})
+  MERGE (y:TahunDebut {year: row[1]})
+  MERGE (a)-[:DEBUTED_IN]->(y)
+);
+
+
+
+//artis ke song
+WITH [
+  ["Super Junior","Sorry, Sorry"],
+  ["Seventeen","Super"],
+  ["Red Velvet","Red Flavor"],
+  ["Momoland","BBoom BBoom"],
+  ["iKon","Love Scenario"],
+  ["ITZY","DALLA DALLA"],
+  ["EXO","Love Shot"],
+  ["Stray Kids","God's Menu"],
+  ["LE SSERAFIM","Fearless"],
+  ["DAY-6","Congratulations"],
+  ["Treasure","DARARI"],
+  ["aespa","Next Level"],
+  ["SNSD","Gee"],
+  ["Tomorrow X Together","Anti-Romantic"],
+  ["IVE","ELEVEN"],
+  ["Twice","TT"],
+  ["ATEEZ","Deja Vu"],
+  ["MAMAMOO","HIP"],
+  ["BIGBANG","Bang Bang Bang"],
+  ["NewJeans","Super Shy"],
+  ["GOT7","Just Right"],
+  ["IU","Celebrity"],
+  ["Gummy","You Are My Everything"],
+  ["Taeyeon (SNSD)","I"],
+  ["Jessi","NUNU NANA"],
+  ["Lee Hi","ONLY"],
+  ["Sunmi","Gashina"],
+  ["Ailee","Heaven"],
+  ["BIBI","Vengeance"],
+  ["Chungha","Gotta Go"]
+] AS data
+FOREACH (row IN data |
+  MERGE (a:Artist {name: row[0]})
+  MERGE (l:Lagu {title: row[1]})
+  MERGE (a)-[:PERFORMS]->(l)
+);
+
+
+
+// artis ke fandom
+WITH [
+  ["Super Junior","Elf"],
+  ["Seventeen","Carat"],
+  ["Red Velvet","ReVeluv"],
+  ["Momoland","Merry"],
+  ["iKon","iKONIC"],
+  ["ITZY","MIDZY"],
+  ["EXO","EXO-L"],
+  ["Stray Kids","Stay"],
+  ["LE SSERAFIM","FEARNOT"],
+  ["DAY-6","My Day"],
+  ["Treasure","Teume"],
+  ["aespa","MY"],
+  ["SNSD","SONE"],
+  ["Tomorrow X Together","MOA"],
+  ["IVE","DIVE"],
+  ["Twice","ONCE"],
+  ["ATEEZ","ATINY"],
+  ["MAMAMOO","MooMoo"],
+  ["BIGBANG","V.I.P"],
+  ["NewJeans","Bunnies"],
+  ["GOT7","Ahgase"],
+  ["IU","Uaena"],
+  ["Gummy","Gummies"],
+  ["Taeyeon (SNSD)","-"],
+  ["Jessi","Jebbies"],
+  ["Lee Hi","-"],
+  ["Sunmi","Miya-ne"],
+  ["Ailee","Aileeans"],
+  ["BIBI","BIBI Bullets"],
+  ["Chungha","Byulharang"]
+] AS pairs
+FOREACH (pair IN pairs |
+  MERGE (a:Artist {name: pair[0]})
+  MERGE (f:Fandom {name: pair[1]})
+  MERGE (a)-[:HAS_FANDOM]->(f)
+);
+
+
+//SONG ke GENRE
+MATCH (l:Lagu {title:"Sorry, Sorry"})
+MATCH (g:Genre {name:"R&B"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Super"})
+MATCH (g:Genre {name:"EDM"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Red Flavor"})
+MATCH (g:Genre {name:"Pop / R&B"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"BBoom BBoom"})
+MATCH (g:Genre {name:"Dance-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Love Scenario"})
+MATCH (g:Genre {name:"Hip-Hop Ballad"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"DALLA DALLA"})
+MATCH (g:Genre {name:"Dance-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Love Shot"})
+MATCH (g:Genre {name:"R&B"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"God's Menu"})
+MATCH (g:Genre {name:"Hip Hop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Fearless"})
+MATCH (g:Genre {name:"Pop / Dance"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Congratulations"})
+MATCH (g:Genre {name:"Pop- Rock"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"DARARI"})
+MATCH (g:Genre {name:"R&B"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Next Level"})
+MATCH (g:Genre {name:"Electro-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Gee"})
+MATCH (g:Genre {name:"Dance-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Anti-Romantic"})
+MATCH (g:Genre {name:"Pop / Ballad"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"ELEVEN"})
+MATCH (g:Genre {name:"Pop / Dance"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"TT"})
+MATCH (g:Genre {name:"Dance-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Deja Vu"})
+MATCH (g:Genre {name:"Dance-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"HIP"})
+MATCH (g:Genre {name:"R&B / Pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Bang Bang Bang"})
+MATCH (g:Genre {name:"EDM / Hip-hop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Super Shy"})
+MATCH (g:Genre {name:"Pop / Jersey Club"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Just Right"})
+MATCH (g:Genre {name:"Hip Hop / Pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Celebrity"})
+MATCH (g:Genre {name:"Dance-pop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"You Are My Everything"})
+MATCH (g:Genre {name:"Ballad"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"I"})
+MATCH (g:Genre {name:"Pop / Ballad"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"NUNU NANA"})
+MATCH (g:Genre {name:"Hip Hop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"ONLY"})
+MATCH (g:Genre {name:"R&B / Ballad"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Gashina"})
+MATCH (g:Genre {name:"Pop / Dance"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Heaven"})
+MATCH (g:Genre {name:"R&B / Ballad"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Vengeance"})
+MATCH (g:Genre {name:"R&B / Hip-Hop"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+MATCH (l:Lagu {title:"Gotta Go"})
+MATCH (g:Genre {name:"Pop / Dance"})
+MERGE (l)-[:HAS_GENRE]->(g);
+
+
+// === ARTIST ke ALBUM ===
+MATCH (a:Artist {name:"Super Junior"}), (al:Album {title:"Sorry, Sorry"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Seventeen"}), (al:Album {title:"FML"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Red Velvet"}), (al:Album {title:"The Red"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Momoland"}), (al:Album {title:"Great"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"iKon"}), (al:Album {title:"Return"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"ITZY"}), (al:Album {title:"Crazy in Love"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"EXO"}), (al:Album {title:"Don’t Mess Up My Tempo"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Stray Kids"}), (al:Album {title:"Go Live"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"LE SSERAFIM"}), (al:Album {title:"Antifragile"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"DAY-6"}), (al:Album {title:"The Day"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Treasure"}), (al:Album {title:"The Second Step: Chapter One"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"aespa"}), (al:Album {title:"Girls"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"SNSD"}), (al:Album {title:"Gee"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Tomorrow X Together"}), (al:Album {title:"The Chaos Chapter: FREEZE"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"IVE"}), (al:Album {title:"I’ve IVE"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Twice"}), (al:Album {title:"Twicecoaster: Lane 1"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"ATEEZ"}), (al:Album {title:"Zero: Fever Part 3"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"MAMAMOO"}), (al:Album {title:"Reality in BLACK"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"BIGBANG"}), (al:Album {title:"Made"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"NewJeans"}), (al:Album {title:"Get UP"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"GOT7"}), (al:Album {title:"Eyes On You"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"IU"}), (al:Album {title:"Lilac"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Gummy"}), (al:Album {title:"Descendants of the Sun OST Part.4"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Taeyeon"}), (al:Album {title:"My Voice"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Jessi"}), (al:Album {title:"NUNU NANA"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Lee Hi"}), (al:Album {title:"Album 4 ONLY"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Sunmi"}), (al:Album {title:"Warning"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Ailee"}), (al:Album {title:"Invitation"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"BIBI"}), (al:Album {title:"Lowlife Princess: Noir"})
+CREATE (a)-[:RELEASED]->(al);
+
+MATCH (a:Artist {name:"Chungha"}), (al:Album {title:"Querencia"})
+CREATE (a)-[:RELEASED]->(al);

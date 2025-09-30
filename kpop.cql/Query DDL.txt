@@ -1,0 +1,27 @@
+/ Pastikan setiap artist punya nama unik
+CREATE CONSTRAINT artist_name_unique IF NOT EXISTS
+FOR (g:Group) REQUIRE g.title IS UNIQUE;
+
+// Pastikan setiap agensi unik
+CREATE CONSTRAINT agency_name_unique IF NOT EXISTS
+FOR (ag:Agency) REQUIRE ag.name IS UNIQUE;
+
+// Pastikan setiap album punya judul unik
+CREATE CONSTRAINT album_title_unique IF NOT EXISTS
+FOR (al:Album) REQUIRE al.title IS UNIQUE;
+
+// Pastikan setiap lagu punya judul unik
+CREATE CONSTRAINT song_title_unique IF NOT EXISTS
+FOR (l:Lagu) REQUIRE l.title IS UNIQUE;
+
+// Pastikan setiap tahun debut unik
+CREATE CONSTRAINT debut_year_unique IF NOT EXISTS
+FOR (td:Tahun_Debut) REQUIRE td.year IS UNIQUE;
+
+// Pastikan setiap fandom unik
+CREATE CONSTRAINT fandom_name_unique IF NOT EXISTS
+FOR (f:Fandom) REQUIRE f.name IS UNIQUE;
+
+// Index untuk mempercepat pencarian berdasarkan nama genre
+CREATE INDEX genre_name_index IF NOT EXISTS
+FOR (g:Genre) ON (g.name);

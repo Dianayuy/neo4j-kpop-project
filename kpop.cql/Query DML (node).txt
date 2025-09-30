@@ -1,0 +1,209 @@
+// Super Junior
+MERGE (:Artist {name:"Super Junior", debut:2005, type:"Group"});
+MERGE (:Agency {name:"SM Ent"});
+MERGE (:Fandom {name:"Elf"});
+MERGE (:Album {title:"Sorry, Sorry", year:2009});
+MERGE (:Song {title:"Sorry, Sorry", year:2009, genre:"R&B"});
+
+// Seventeen
+MERGE (:Artist {name:"Seventeen", debut:2015, type:"Group"});
+MERGE (:Agency {name:"Pledis Ent"});
+MERGE (:Fandom {name:"Carat"});
+MERGE (:Album {title:"FML", year:2023});
+MERGE (:Song {title:"Super", year:2023, genre:"EDM"});
+
+// Red Velvet
+MERGE (:Artist {name:"Red Velvet", debut:2014, type:"Group"});
+MERGE (:Agency {name:"SM Ent"});
+MERGE (:Fandom {name:"ReVeluv"});
+MERGE (:Album {title:"The Red", year:2015});
+MERGE (:Song {title:"Red Flavor", year:2017, genre:"Pop / R&B"});
+
+// Momoland
+MERGE (:Artist {name:"Momoland", debut:2016, type:"Group"});
+MERGE (:Agency {name:"MLD Ent"});
+MERGE (:Fandom {name:"Merry"});
+MERGE (:Album {title:"Great", year:2018});
+MERGE (:Song {title:"BBoom BBoom", year:2018, genre:"Dance-pop"});
+
+// iKON
+MERGE (:Artist {name:"iKON", debut:2015, type:"Group"});
+MERGE (:Agency {name:"YG Ent"});
+MERGE (:Fandom {name:"iKONIC"});
+MERGE (:Album {title:"Return", year:2018});
+MERGE (:Song {title:"Love Scenario", year:2018, genre:"Hip-Hop Ballad"});
+
+// ITZY
+MERGE (:Artist {name:"ITZY", debut:2019, type:"Group"});
+MERGE (:Agency {name:"JYP Ent"});
+MERGE (:Fandom {name:"MIDZY"});
+MERGE (:Album {title:"Crazy in Love", year:2021});
+MERGE (:Song {title:"DALLA DALLA", year:2019, genre:"Dance-pop"});
+
+// EXO
+MERGE (:Artist {name:"EXO", debut:2012, type:"Group"});
+MERGE (:Agency {name:"SM Ent"});
+MERGE (:Fandom {name:"EXO-L"});
+MERGE (:Album {title:"Don’t Mess Up My Tempo", year:2018});
+MERGE (:Song {title:"Love Shot", year:2018, genre:"R&B"});
+
+// Stray Kids
+MERGE (:Artist {name:"Stray Kids", debut:2018, type:"Group"});
+MERGE (:Agency {name:"JYP Ent"});
+MERGE (:Fandom {name:"Stay"});
+MERGE (:Album {title:"Go Live", year:2020});
+MERGE (:Song {title:"God’s Menu", year:2020, genre:"Hip Hop"});
+
+// LE SSERAFIM
+MERGE (:Artist {name:"LE SSERAFIM", debut:2022, type:"Group"});
+MERGE (:Agency {name:"Source Music"});
+MERGE (:Fandom {name:"FEARNOT"});
+MERGE (:Album {title:"Antifragile", year:2022});
+MERGE (:Song {title:"Fearless", year:2022, genre:"Pop / Dance"});
+
+// DAY6
+MERGE (:Artist {name:"DAY6", debut:2015, type:"Group"});
+MERGE (:Agency {name:"JYP Ent"});
+MERGE (:Fandom {name:"My Day"});
+MERGE (:Album {title:"The Day", year:2015});
+MERGE (:Song {title:"Congratulations", year:2015, genre:"Pop-Rock"});
+
+// Treasure
+MERGE (:Artist {name:"Treasure", debut:2020, type:"Group"});
+MERGE (:Agency {name:"YG Ent"});
+MERGE (:Fandom {name:"Teume"});
+MERGE (:Album {title:"The Second Step: Chapter One", year:2022});
+MERGE (:Song {title:"DARARI", year:2022, genre:"R&B"});
+
+// aespa
+MERGE (:Artist {name:"aespa", debut:2020, type:"Group"});
+MERGE (:Agency {name:"SM Ent"});
+MERGE (:Fandom {name:"MY"});
+MERGE (:Album {title:"Girls", year:2022});
+MERGE (:Song {title:"Next Level", year:2021, genre:"Electro-pop"});
+
+// SNSD
+MERGE (:Artist {name:"SNSD", debut:2007, type:"Group"});
+MERGE (:Agency {name:"SM Ent"});
+MERGE (:Fandom {name:"SONE"});
+MERGE (:Album {title:"Gee", year:2009});
+MERGE (:Song {title:"Gee", year:2009, genre:"Dance-pop"});
+
+// TXT
+MERGE (:Artist {name:"Tomorrow X Together", debut:2019, type:"Group"});
+MERGE (:Agency {name:"BigHit Music"});
+MERGE (:Fandom {name:"MOA"});
+MERGE (:Album {title:"The Chaos Chapter: FREEZE", year:2021});
+MERGE (:Song {title:"Anti-Romantic", year:2021, genre:"Pop / Ballad"});
+
+// IVE
+MERGE (:Artist {name:"IVE", debut:2021, type:"Group"});
+MERGE (:Agency {name:"Starship Ent"});
+MERGE (:Fandom {name:"DIVE"});
+MERGE (:Album {title:"I’ve IVE", year:2023});
+MERGE (:Song {title:"ELEVEN", year:2021, genre:"Dance-pop"});
+
+// Twice
+MERGE (:Artist {name:"Twice", debut:2015, type:"Group"});
+MERGE (:Agency {name:"JYP Ent"});
+MERGE (:Fandom {name:"ONCE"});
+MERGE (:Album {title:"Twicetober: Lane 1", year:2016});
+MERGE (:Song {title:"TT", year:2016, genre:"Dance-pop"});
+
+// ATEEZ
+MERGE (:Artist {name:"ATEEZ", debut:2018, type:"Group"});
+MERGE (:Agency {name:"KQ Ent"});
+MERGE (:Fandom {name:"ATINY"});
+MERGE (:Album {title:"Zero: Fever Part 3", year:2021});
+MERGE (:Song {title:"Deja Vu", year:2021, genre:"EDM / Hip-Hop"});
+
+// MAMAMOO
+MERGE (:Artist {name:"MAMAMOO", debut:2014, type:"Group"});
+MERGE (:Agency {name:"RBW"});
+MERGE (:Fandom {name:"MooMoo"});
+MERGE (:Album {title:"Reality in BLACK", year:2019});
+MERGE (:Song {title:"Hip", year:2019, genre:"R&B / Pop"});
+
+// BIGBANG
+MERGE (:Artist {name:"BIGBANG", debut:2006, type:"Group"});
+MERGE (:Agency {name:"YG Ent"});
+MERGE (:Fandom {name:"V.I.P"});
+MERGE (:Album {title:"Made", year:2015});
+MERGE (:Song {title:"Bang Bang Bang", year:2015, genre:"EDM / Hip-Hop"});
+
+// NewJeans
+MERGE (:Artist {name:"NewJeans", debut:2022, type:"Group"});
+MERGE (:Agency {name:"ADOR Ent"});
+MERGE (:Fandom {name:"Bunnies"});
+MERGE (:Album {title:"Get Up", year:2023});
+MERGE (:Song {title:"Super Shy", year:2023, genre:"Pop / Jersey Club"});
+
+// GOT7
+MERGE (:Artist {name:"GOT7", debut:2014, type:"Group"});
+MERGE (:Agency {name:"JYP Ent"});
+MERGE (:Fandom {name:"Ahgase"});
+MERGE (:Album {title:"Eyes On You", year:2018});
+MERGE (:Song {title:"Just Right", year:2015, genre:"Hip Hop / Pop"});
+
+// IU
+MERGE (:Artist {name:"IU", debut:2008, type:"Soloist"});
+MERGE (:Agency {name:"Kakao Ent"});
+MERGE (:Fandom {name:"Uaena"});
+MERGE (:Album {title:"Lilac", year:2021});
+MERGE (:Song {title:"Celebrity", year:2021, genre:"Dance-pop"});
+
+// Gummy
+MERGE (:Artist {name:"Gummy", debut:2003, type:"Soloist"});
+MERGE (:Agency {name:"C-JeS Ent"});
+MERGE (:Fandom {name:"Gummies"});
+MERGE (:Album {title:"Descendants of the Sun OST Part.4", year:2016});
+MERGE (:Song {title:"You Are My Everything", year:2016, genre:"Ballad"});
+
+// Taeyeon (SNSD)
+MERGE (:Artist {name:"Taeyeon", debut:2015, type:"Soloist"});
+MERGE (:Agency {name:"SM Ent"});
+MERGE (:Fandom {name:"Sone"}); // sama fandom SNSD karena masih 1 grup
+MERGE (:Album {title:"My Voice", year:2017});
+MERGE (:Song {title:"I", year:2015, genre:"Pop / Ballad"});
+
+// Jessi
+MERGE (:Artist {name:"Jessi", debut:2005, type:"Soloist"});
+MERGE (:Agency {name:"Doremi Ent"});
+MERGE (:Fandom {name:"Jebbies"});
+MERGE (:Album {title:"NUNU NANA", year:2020});
+MERGE (:Song {title:"NUNU NANA", year:2020, genre:"Hip Hop"});
+
+// Lee Hi
+MERGE (:Artist {name:"Lee Hi", debut:2012, type:"Soloist"});
+MERGE (:Agency {name:"AOMG Ent"});
+MERGE (:Fandom {name:"Hicecream"});
+MERGE (:Album {title:"Album 4 ONLY", year:2021});
+MERGE (:Song {title:"ONLY", year:2021, genre:"R&B / Ballad"});
+
+// Sunmi
+MERGE (:Artist {name:"Sunmi", debut:2013, type:"Soloist"});
+MERGE (:Agency {name:"Abyss Company"});
+MERGE (:Fandom {name:"Miya-ne"});
+MERGE (:Album {title:"Warning", year:2018});
+MERGE (:Song {title:"Gashina", year:2017, genre:"Pop / Dance"});
+
+// Ailee
+MERGE (:Artist {name:"Ailee", debut:2012, type:"Soloist"});
+MERGE (:Agency {name:"YMC Ent"});
+MERGE (:Fandom {name:"Aileeans"});
+MERGE (:Album {title:"Invitation", year:2012});
+MERGE (:Song {title:"Heaven", year:2012, genre:"R&B / Ballad"});
+
+// BIBI
+MERGE (:Artist {name:"BIBI", debut:2019, type:"Soloist"});
+MERGE (:Agency {name:"Feel Ghood Music"});
+MERGE (:Fandom {name:"BIBI Bullets"});
+MERGE (:Album {title:"Lowlife Princess: Noir", year:2022});
+MERGE (:Song {title:"Vengeance", year:2022, genre:"R&B / Hip-Hop"});
+
+// Chungha
+MERGE (:Artist {name:"Chungha", debut:2019, type:"Soloist"});
+MERGE (:Agency {name:"MNH Ent"});
+MERGE (:Fandom {name:"Byulharang"});
+MERGE (:Album {title:"Querencia", year:2021});
+MERGE (:Song {title:"Gotta Go", year:2019, genre:"Pop / Dance"});
